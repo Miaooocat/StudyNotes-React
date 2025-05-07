@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Prepare container -->
+    <div id="test">
+
+    </div>
+</body>
+<!-- add dependency based on those steps-->
+<script src="../React16/react.development.js" type="text/javascript"></script>
+<script src="../React16/react-dom.development.js" type="text/javascript"></script>
+
+<script src="../React16/babel.min.js" type="text/javascript"></script>
+
+
+<!--Use babel to render jsx syntax-->
+<script type="text/babel">
+        // 1. Create a virtual DOM
+        const VDOM = <h1>Hello</h1>  // No need to add quotation marks
+        // 2. Render: if there are multiple renderings to the same container, the later ones will overwrite the earlier ones
+        ReactDOM.render(VDOM,document.getElementById("test"));
+        
+</script>
+
+</html>
